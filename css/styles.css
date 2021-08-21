@@ -1,0 +1,192 @@
+@charset "UTF-8";
+body {
+  background-color: black;
+  color: white; }
+
+/*Nav bar*/
+.container-fluid h1 {
+  color: black; }
+
+.container-fluid .nav-link {
+  border-bottom: 1px solid black; }
+
+/*Footer*/
+.footer {
+  background-color: #8cbebe;
+  color: black; }
+
+.inicio-footer {
+  padding: 30px 60px; }
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px 60px; }
+  .footer-container .footer-info ul {
+    margin-right: 100px;
+    margin-bottom: 30px; }
+    .footer-container .footer-info ul li {
+      list-style-type: none;
+      font-weight: bold;
+      line-height: 30px; }
+
+/********HOME********/
+#carousel-home .img-slider-home {
+  max-height: 680px; }
+
+.titulo-home {
+  text-align: center;
+  font-weight: bold;
+  margin: 35px; }
+
+.subtitulo-home {
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 80px; }
+
+.lista-servicios {
+  text-align: center; }
+  .lista-servicios .serv-link {
+    text-decoration: none;
+    color: white;
+    font-size: 24px; }
+  .lista-servicios ul {
+    list-style-type: none;
+    line-height: 40px;
+    font-size: 20px;
+    margin: 30px 30px 90px;
+    text-align: center; }
+
+/********PRODUCTOS********/
+.titulo-seccion {
+  text-align: center;
+  margin: 40px;
+  font-weight: lighter; }
+
+.productos-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 60px 0px 120px; }
+  .productos-container .card-producto {
+    max-width: 400px;
+    max-height: 390px;
+    margin: 20px;
+    overflow: hidden; }
+    .productos-container .card-producto .card-img-overlay-producto .card-title-producto {
+      margin: 30px;
+      text-align: center;
+      font-weight: bold; }
+    .productos-container .card-producto .card-img-overlay-producto .card-text-producto {
+      text-align: center;
+      margin: 35px; }
+    .productos-container .card-producto .card-img-overlay-producto .card-text-sub a {
+      text-decoration: none;
+      color: black; }
+  .productos-container .card-producto:hover {
+    max-height: 620px; }
+
+/********MÁQUINAS********/
+.card-maquina {
+  max-width: 470px;
+  margin: 40px;
+  cursor: pointer; }
+  .card-maquina .card-img-top {
+    max-height: 570px; }
+  .card-maquina .card-body {
+    color: white; }
+    .card-maquina .card-body .card-title {
+      font-weight: bold;
+      text-align: center; }
+    .card-maquina .card-body .card-text {
+      text-align: justify; }
+
+.card-maquina:hover {
+  transform: scale(0.9, 0.9); }
+
+.aclaracion-maquina {
+  font-size: 18px;
+  font-weight: lighter;
+  padding-left: 30px;
+  letter-spacing: 1px; }
+  .aclaracion-maquina a {
+    text-decoration: none;
+    color: white; }
+
+/********NOSOTROS********/
+.frase-nosotros {
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  padding: 70px 70px 50px; }
+
+.abstact-nosotros {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  padding: 0px 70px 50px; }
+
+#carousel-nosotros .img-slider-nosotros {
+  max-height: 650px; }
+
+.container-info-nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-around; }
+  .container-info-nosotros .info-nosotros {
+    margin: 10px;
+    width: 500px; }
+    .container-info-nosotros .info-nosotros .pregunta-nosotros {
+      text-align: center;
+      color: #c6cad6;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 30px; }
+    .container-info-nosotros .info-nosotros p {
+      color: white;
+      text-align: justify;
+      line-height: 30px;
+      font-size: 18px; }
+    .container-info-nosotros .info-nosotros iframe {
+      margin: 20px; }
+  @media screen and (max-width: 1200px) {
+    .container-info-nosotros .info-nosotros {
+      width: 700px; }
+      .container-info-nosotros .info-nosotros .pregunta-nosotros p {
+        text-align: center; } }
+
+/********CONTACTO********/
+.p-contacto {
+  margin: 50px 40px 5px;
+  font-size: 20px;
+  line-height: 30px;
+  color: white; }
+
+.cuerpo-formulario {
+  margin: 40px 5px 60px;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cuerpo-formulario .opciones-formulario {
+    margin: 20px; }
+  .cuerpo-formulario legend {
+    font-size: 20px; }
+  .cuerpo-formulario .recibir-info-en {
+    margin-left: 20px;
+    font-weight: lighter; }
+  .cuerpo-formulario .boton-resetear {
+    float: left;
+    margin: 50px 0px 30px; }
+  .cuerpo-formulario .boton-enviar {
+    float: right;
+    margin: 50px 0px 30px; }

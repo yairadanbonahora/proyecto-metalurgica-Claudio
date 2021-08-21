@@ -1,0 +1,283 @@
+@import "base/colores";
+
+body {
+    background-color: $negro;
+    color: $blanco;
+}
+
+/*Nav bar*/
+.container-fluid {
+    h1 {
+        color: $negro;
+    }
+
+    .nav-link {
+        border-bottom: 1px solid $negro;
+    }
+}
+
+/*Footer*/
+.footer {
+    background-color: rgb(140, 190, 190);
+    color: $negro;
+}
+
+.inicio-footer {
+    padding: 30px 60px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 60px;
+
+    .footer-info {
+        ul { 
+            margin-right: 100px;
+            margin-bottom: 30px;
+
+            li {
+                list-style-type: none;
+                font-weight: bold; 
+                line-height: 30px;
+            }
+        }
+        
+    }
+}
+
+/********HOME********/
+
+#carousel-home {
+    .img-slider-home {
+        max-height: 680px;
+    }
+}
+
+.titulo-home {
+    text-align: center;
+    font-weight: bold;
+    margin: 35px;
+}
+
+.subtitulo-home {
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 80px;
+}
+
+.lista-servicios {
+    text-align: center;
+
+    .serv-link {
+        text-decoration: none;
+        color: $blanco;
+        font-size: 24px;
+    }
+   
+    ul {
+        list-style-type: none;
+        line-height: 40px;
+        font-size: 20px;
+        margin: 30px 30px 90px;
+        text-align: center;
+    }
+}
+
+
+/********PRODUCTOS********/
+.titulo-seccion {
+    text-align: center;
+    margin: 40px;
+    font-weight: lighter;
+}
+
+.productos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px 0px 120px;
+
+    .card-producto {
+        max-width: 400px;
+        max-height: 390px;
+        margin: 20px;
+        overflow: hidden;
+
+        .card-img-overlay-producto {
+
+            .card-title-producto {
+                margin: 30px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .card-text-producto {
+                text-align: center;
+                margin: 35px;
+            }
+
+            .card-text-sub {
+                a {
+                    text-decoration: none;
+                    color: $negro;
+                }
+            }
+        }
+    }
+
+    .card-producto:hover {
+        max-height: 620px;
+    }
+}
+
+
+/********MÁQUINAS********/
+.card-maquina {
+    max-width: 470px;
+    margin: 40px;
+    cursor: pointer;
+
+    .card-img-top {
+        max-height: 570px;
+    }
+
+    .card-body {
+        color: $blanco; 
+
+        .card-title {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .card-text {
+            text-align: justify;
+        }
+    }
+}
+
+.card-maquina:hover {
+    transform: scale(0.9,0.9);
+}
+
+.aclaracion-maquina {
+    font-size: 18px;
+    font-weight: lighter;
+    padding-left: 30px;
+    letter-spacing: 1px;
+
+    a {
+        text-decoration: none;
+        color: $blanco;
+    }
+}
+
+/********NOSOTROS********/
+.frase-nosotros {
+    font-weight: bold;
+    font-style: italic;
+    color: $blanco; 
+    text-align: center;
+    padding: 70px 70px 50px;
+}
+
+.abstact-nosotros {
+    font-size: 20px;
+    color: $blanco;
+    text-align: center;
+    line-height: 30px;
+    padding: 0px 70px 50px;
+}
+
+#carousel-nosotros {
+    .img-slider-nosotros {
+        max-height: 650px;
+    }
+}
+    
+.container-info-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+
+    .info-nosotros {
+        margin: 10px;
+        width: 500px;
+
+        .pregunta-nosotros {
+            text-align: center;
+            color:rgb(198, 202, 214);
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        p {
+            color: $blanco;
+            text-align: justify;
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        iframe {
+            margin: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .info-nosotros {
+            width: 700px;
+
+            .pregunta-nosotros p {
+                text-align: center;
+            }
+        }  
+    }
+}
+
+/********CONTACTO********/
+.p-contacto {
+    margin: 50px 40px 5px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $blanco; 
+}
+
+.cuerpo-formulario { 
+    margin: 40px 5px 60px;
+    color: $blanco;
+    border: 1px solid $blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .opciones-formulario {
+        margin: 20px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    .recibir-info-en {
+        margin-left: 20px;
+        font-weight: lighter;
+    }
+
+    .boton-resetear {
+        float: left;
+        margin: 50px 0px 30px; 
+    }
+
+    .boton-enviar {
+        float: right;
+        margin: 50px 0px 30px;
+    }
+    
+}

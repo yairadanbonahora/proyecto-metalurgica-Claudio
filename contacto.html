@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Para más información sobre cualquier producto o máquina, contáctese con nosotros">
+    <meta name="keywords" content="Metalúrgica Claudio, información, contacto">
+    <title>Metalúrgica Claudio - Contacto</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="logo">
+            <img src="img/logo.png" alt="logo" width="50px">
+          </a> 
+          <h1>Metalúrgica Claudio</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="productos.html">Productos</a>
+              <a class="nav-link" href="maquinas.html">Máquinas</a>
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <main>
+    <h1 class="titulo-seccion">Contacto</h1>
+    <p class="p-contacto">Si usted desea obtener más información respecto a algún producto o máquina de nuestra empresa o si quiere adquirirlo, por favor complete el siguiente formulario y será contactado a la brevedad.</p>
+
+    <div class="cuerpo-formulario">
+      <form>
+        <fieldset>
+          <div class="opciones-formulario">
+            <label for="user-name">Nombre</label>
+            <input name="user-name" type="text" placeholder="Tu nombre" required autofocus>
+          </div>
+          <div class="opciones-formulario">
+            <label for="e-mail">E-mail</label>
+            <input name="e-mail" type="email" placeholder="Tu mail">
+          </div>
+          <div class="opciones-formulario">
+            <label for="telephone">Celular</label>
+            <input name="telephone" type="number" placeholder="Sin 0 ni 15">
+          </div>
+          <div class="opciones-formulario">
+            <label for="title">Quiero</label>
+            <select name="title" id="title">
+              <option value="" selected>Selecciona</option>
+              <option value="Producto">Información</option>
+              <option value="Maquina">Comprar</option>
+            </select>
+            </label>   
+          </div>
+          <div class="opciones-formulario">
+            <label for="title">Elemento</label>
+              <select name="title" id="title">
+                <option value="" selected>Selecciona</option>
+                <option value="Producto">Producto</option>
+                <option value="Maquina">Máquina</option>
+              </select>
+            </label>   
+          </div>
+          <div>
+            <label for="text"></label>
+            <textarea cols="40" rows="5"></textarea>    
+          </div>  
+                  
+          <legend class="recibir-info-en">Prefiero que se comuniquen vía:</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Celular</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">E-mail</label>
+          </div>
+          
+          <div class="boton-resetear">
+            <input name="resetear" type="reset" value="Resetear">
+          </div>
+          <div class="boton-enviar">
+            <input name="enviar" type="submit" value="Enviar">
+          </div>
+                    
+        </fieldset>
+      </form>
+    </div>  
+  </main>
+
+<footer>
+  <div class="footer">
+    <div class="inicio-footer">
+      <img src="img/logo.png" alt="logo empresarial" width="50px">
+      <h2>Metalúrgica Claudio</h2>
+    </div>
+  
+    <div class="footer-container">
+      <div class="footer-info">
+        <ul>
+          <li>Parque industrial Parcela 14</li>
+          <li>Bragado, Buenos Aires, CP 6640</li>
+          <li>Email: metalurgicaclaudio@gmail.com</li>
+          <li>Teléfono: +54 (2342) 150000</li>
+        </ul>
+      </div>
+
+      <div class="footer-info">
+        <ul>
+          <li>Materiales</li>
+          <li>Máquinas</li>
+          <li>Metalúrgica</li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+</footer>
+    
+
+
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
